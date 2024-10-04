@@ -9,8 +9,10 @@ describe('Calculator Memory Functions', function() {
 
 // Test calculation functions
 describe('Calculator Calculation Functions', function() {
-    const res = calculator.calculateSquareRoot(4);
-    it('should return 2', function() {
+    obj = {value : 4}
+    it('sqrt should return 2', function() {
+        calculator.calculateSquareRoot(obj)
+        res = obj.value
         assert.strictEqual(res, 2);
     });
 });

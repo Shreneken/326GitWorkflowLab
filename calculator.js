@@ -33,15 +33,8 @@ function calculateResult() {
 }
 
 // TODO: Fix the square root function not displaying
-function calculateSquareRoot(value=null) {
-    let v;
-    if (!value) {
-        let display = document.getElementById('display');
-        v = display.value;
-    } else {
-        v = value;
-    }
-    return Math.sqrt(v);
+function calculateSquareRoot(obj) {
+    obj.value = Math.sqrt(obj.value)
 }
 
 // TODO: Implement square function
