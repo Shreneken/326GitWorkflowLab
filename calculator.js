@@ -33,8 +33,9 @@ function calculateResult() {
 }
 
 // TODO: Fix the square root function not displaying
-function calculateSquareRoot(obj) {
-    obj.value = Math.sqrt(obj.value)
+// When used on calculator html , the displayElement should be the display object
+function calculateSquareRoot(displayElement) {
+    displayElement.value = Math.sqrt(displayElement.value)
 }
 
 // TODO: Implement square function
