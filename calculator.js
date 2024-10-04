@@ -39,8 +39,8 @@ function calculateSquareRoot(displayElement) {
 }
 
 // TODO: Implement square function
-function calculateSquare() {
-    // Hint: Use exponentiation
+function calculateSquare(displayElement) {
+    displayElement.value = Math.pow(displayElement.value, 2)
 }
 
 // BUG: FIX reciprocal function
