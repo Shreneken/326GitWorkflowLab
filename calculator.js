@@ -45,16 +45,8 @@ function calculateSquareRoot(value=null) {
 }
 
 // TODO: Implement square function
-function calculateSquare(value=null) {
-    // Hint: Use exponentiation
-    let v;
-    if (!value) {
-        let display = document.getElementById('display');
-        v = display.value;
-    } else {
-        v = value;
-    }
-    return Math.pow(v, 2);
+function calculateSquare(displayElement) {
+    displayElement.value = Math.pow(displayElement.value, 2)
 }
 
 // BUG: FIX reciprocal function
