@@ -33,15 +33,9 @@ function calculateResult() {
 }
 
 // TODO: Fix the square root function not displaying
-function calculateSquareRoot(value=null) {
-    let v;
-    if (!value) {
-        let display = document.getElementById('display');
-        v = display.value;
-    } else {
-        v = value;
-    }
-    return Math.sqrt(v);
+// When used on calculator html , the displayElement should be the display object
+function calculateSquareRoot(displayElement) {
+    displayElement.value = Math.sqrt(displayElement.value)
 }
 
 // TODO: Implement square function
