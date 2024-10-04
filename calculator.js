@@ -46,11 +46,13 @@ function calculateSquare(displayElement) {
 // BUG: FIX reciprocal function
 function calculateReciprocal() {
     // Hint: Reciprocal is 1/x
-    display.value = 1-value;
+    const display = document.getElementById('display');
+    display.value = 1 / display.value;
 }
 module.exports = {
     calculateSquareRoot,
     calculateSquare,
+    calculateReciprocal,
 };
 
 
